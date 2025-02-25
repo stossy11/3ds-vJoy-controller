@@ -199,7 +199,7 @@ int main(int argc, char **argv) {
 				failExit("Wrong welcome message on loop %d: %s", loopCounter, temp);
 			}
 		} else {
-			svcSleepThread(1000000000);
+			svcSleepThread(10000000);
 			send(sock, buttons, strlen(buttons), 0);
 			printf("Sent data\n");
 		}
